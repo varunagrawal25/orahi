@@ -1,38 +1,115 @@
-.App {
+/* ------------------------------login---------------------------- */
+body {
+  font-family: Roboto;
+  font-style: normal;
+}
+.top-nav-login {
+  padding: 12px 20px;
+  height: 8vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  font-size: 22px;
+}
+.login-card {
+  background-color: white;
+  width: 40%;
+  margin-left: 31%;
+  margin-top: 134px;
+  border-radius: 10px;
+  height: 37vh;
+  box-shadow: 43px 57px 93px 59px #f5f5f5;
+}
+.login-form {
+  /* box-shadow: 3px 3px 3px 3px #E5E7E9; */
+  margin-top: 10px;
+  padding: 20px 30px;
+  height: 50vh;
+  border-radius: 10px;
+}
+.login-msg {
+  color: #0271c7;
+  font-weight: 600;
+  text-align: center;
+  font-size: 28px;
+  font-family: Roboto;
+  font-style: normal;
+}
+.login-label {
+  font-weight: 600;
+  font-size: 13px;
+  margin: 5px 0px;
+  margin-top: 30px;
+}
+.login-feilds input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid lightgrey;
+  margin: 20px 0px;
+}
+.login-btn {
+  margin-top: 25px;
+  text-align: center;
+}
+.login-btn button {
+  background-image: linear-gradient(to bottom right, #0271c7, #0271c7);
+  outline: none;
+  border: none;
+  padding: 8px 38px;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 58px;
+  margin-top: 25px;
+  font-family: Roboto;
+  font-style: normal;
+}
+.otpbox {
+  margin-left: 125px;
+  margin-top: 15px;
+}
+.inputotpbox {
+  font-size: 30px;
+}
+.graphStyle {
+  margin-top: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bar-group .name-label {
+  text-anchor: end;
+  font-weight: 600;
+  font-size: 18px;
+  fill: #4f4f4f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bar-group .value-label {
+  text-anchor: end;
+  fill: #fff;
+  font-weight: 600;
+  font-size: 17px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container .bar-group {
+  transition: opacity 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+/* Fade bars when the chart is hovered */
+.container:hover .bar-group {
+  opacity: 0.3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* But don't fade the hovered bar... */
+.container .bar-group:hover {
+  opacity: 1;
+}
+
+.container .bar-group:hover .name-label {
+  font-weight: 400;
+}
+
+.container .bar-group:hover .value-label {
+  font-size: 0.8em;
 }
